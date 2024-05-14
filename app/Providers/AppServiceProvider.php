@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // global route expression
+        // Route::pattern('id', '[0-9]+');
     }
 }
