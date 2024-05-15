@@ -7,6 +7,16 @@
    <title>Show Form</title>
 </head>
 <body>
+
+   <h1>Send Data All Method</h1>
+
+   {{-- menampilkan message data --}}
+   @if(session('message'))0
+      <p style="background: green; color:white;">{{ session('message') }}</p>
+   @endif
+
+   
+
    <h1>Show Form Request</h1>
    <h2>GET METHOD</h2>
    {{-- url method get --}}

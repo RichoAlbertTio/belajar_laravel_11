@@ -83,7 +83,17 @@ Route::get('/send-get', function (Request $request) {
 });
 
 Route::post('/send-post', function (Request $request) {
-    dump($request->all());
+    // dump($request->all());
+    // seandainya sudah diterima dan diolah
+
+    // dump($request->message);
+
+    // response
+    return redirect('/show-form')->with('message', $request->message);
+
+    // menuju ke
+    // return redirect()->route('login');
+    // return back()->withInput();
 });
 
 
